@@ -30,7 +30,7 @@ io.on ('conexão', () => {
         message.save ((err) => { 
           if (err) 
             sendStatus (500); 
-          io.emit ('mensagem', req.body);
+          io.emit ('message', req.body);
            res.sendStatus (200); 
         }) 
       })

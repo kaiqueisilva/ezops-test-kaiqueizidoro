@@ -52,7 +52,7 @@ function sendMessage(message){
    $.post('http://localhost:3000/messages', message)
  }
  var socket = io ();
-socket.on ('mensagem', addMessages)
+socket.on ('message', addMessages)
 </script>
 <script src = ”/ socket.io/socket.io.js”> </script>
 </body>
